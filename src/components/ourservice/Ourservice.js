@@ -5,7 +5,18 @@ const Ourservice = () => {
   return (
     <div className="our_serviceses">
       <div className="our_service">
-        <h2>Sourcing</h2>
+        <div className="service_title">
+          <h2>Sourcing</h2>
+          <div className="title_sep"></div>
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
         <p>
           Experienced sourcing teams are constantly on the look out for new
           products. These teams of young. talented and experienced professionals
@@ -23,7 +34,17 @@ const Ourservice = () => {
         </p>
       </div>
       <div className="our_service">
-        <h2>Development</h2>
+        <div className="service_title">
+          <h2>Development</h2>
+          <div className="title_sep"></div>
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
         <p>
           In-house development teams are precisely focused on new product
           developments using local a. imported materials. The development teams
@@ -39,7 +60,17 @@ const Ourservice = () => {
         </p>
       </div>
       <div className="our_service">
-        <h2>Merchandising</h2>
+        <div className="service_title">
+          <h2>Merchandising</h2>
+          <div className="title_sep"></div>
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
         <p>
           Each team headed and monitored by a Manager– routinely and
           systematically updating, b the customer on the progress and status of
@@ -61,7 +92,18 @@ const Ourservice = () => {
         </p>
       </div>
       <div className="our_service">
-        <h2>Production & Quality Control</h2>
+        <div className="service_title">
+          <h2>Production & Quality Control</h2>
+          <div className="title_sep"></div>
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+          </div>
+        </div>
         <p>
           Each customer is also provided with selected and separate production
           team (quality controllers). These teams along with the merchandising
@@ -81,7 +123,17 @@ const Ourservice = () => {
         </p>
       </div>
       <div className="our_service">
-        <h2>Social Compliances</h2>
+        <div className="service_title">
+          <h2>Social Compliances</h2>
+          <div className="title_sep"></div>
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
         <p>
           Eurotex Fashion BD. Gives special emphasis on social compliance as
           such most of our factories are BSCI, WRAP, SEDEX, add Accord Alliance
@@ -91,7 +143,18 @@ const Ourservice = () => {
         </p>
       </div>
       <div className="our_service">
-        <h2>Logistics</h2>
+        <div className="service_title">
+          <h2>Logistics</h2>
+          <div className="title_sep"></div>
+          <div class="indicator">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <p></p>
         <p>
           In order to handle all kinds of shipments to our valued customers, we
           are always ready to support customer and negotiate the fastest and
