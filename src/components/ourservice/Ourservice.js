@@ -135,7 +135,7 @@ const Ourservice = () => {
           </div>
         </div>
         <p>
-          Eurotex Fashion BD. Gives special emphasis on social compliance as
+         <strong>All In One Fashion BD.</strong>  Gives special emphasis on social compliance as
           such most of our factories are BSCI, WRAP, SEDEX, add Accord Alliance
           etc approved. To maintain this compliance we have our own compliance
           and audit team who makes random checks on factories regarding all

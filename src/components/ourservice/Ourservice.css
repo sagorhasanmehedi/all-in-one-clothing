@@ -1,16 +1,17 @@
 .our_serviceses{
-    width: 50% ;
+    width: 51% ;
     padding:40px; 
     margin-top:40px
 }
 .our_serviceses h2{
-    font-size: 26px;
-    font-weight: 600;
-    margin-right: 8px !important;
+    font-size: 1.9em;
+    line-height: 1.5em;
+    margin: 8px !important;
+    font-weight: 400;
 }
 .our_serviceses p{
-    margin-top: 0;
-    margin-bottom: 20px;
+  line-height: 1.9em;
+  margin: 0;
 }
 .service_title{
     display: flex;

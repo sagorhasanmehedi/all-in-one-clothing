@@ -7,7 +7,7 @@ const Header = () => {
     <div className="nav">
       <input type="checkbox" id="nav-check" />
       <div className="nav-header">
-        <div className="nav-title">All In One Clothing</div>
+        <div className="nav-title">FASHION 2MORROW</div>
       </div>
       <div className="nav-btn">
         <label htmlFor="nav-check">

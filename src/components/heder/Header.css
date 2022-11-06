@@ -1,13 +1,11 @@
-body {
-    margin: 0px;
-    font-family: "segoe ui";
-  }
+
   .nav {
-    padding: 25px 60px 25px 60px;
-    background-color: #4d4d4d;
+    padding: 25px 0 25px 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
+    gap: 10%;
+   
   }
   .nav_bottom_border{
     height: 10px;
@@ -16,6 +14,7 @@ body {
   .nav > .nav-header {
     display: flex;
     gap: 50px;
+    
   }
   .nav-image-and-logo {
     display: flex;
@@ -24,9 +23,10 @@ body {
   .nav > .nav-header > .nav-title {
     display: inline-block;
     font-size: 22px;
-    color: #fff;
+    color: #000;
     padding: 10px 10px 10px 10px;
     cursor: pointer;
+     font-weight: 500;
   }
   .nav > .nav-btn {
     display: none;
@@ -40,12 +40,19 @@ body {
   .nav > .nav-links > a {
     text-transform: uppercase;
     text-decoration: none;
-    color: #efefef;
+    color: #000;
     position: relative;
     margin: 13px;
     padding-bottom: 10px;
     cursor: pointer;
+    transition: 0.5s transform ease;
+    
   }
+  /* .nav-links > a:hover {
+    color: #f21111 !important;
+    font-weight: 400;
+   
+  } */
   .nav > .nav-links > a::before {
     content: "";
     width: 100%;
@@ -53,7 +60,7 @@ body {
     position: absolute;
     left: 0;
     bottom: 0;
-    background: #fff;
+    background:#f21111;
     transition: 0.5s transform ease;
     transform: scale3d(0, 1, 1);
     transform-origin: 0 50%;
@@ -87,7 +94,7 @@ body {
       display: block;
       width: 25px;
       height: 10px;
-      border-top: 2px solid #eee;
+      border-top: 2px solid #f21111;
     }
     .nav > .nav-links {
       position: absolute;
@@ -97,14 +104,19 @@ body {
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
-      top: 91px;
+      top: 88px;
       left: 0px;
       text-align: center;
+     
       
     }
     .nav > .nav-links > a {
       display: block;
       margin-left: 18px;
+      color: white;
+    }
+    .nav > .nav-links > a:first-child {
+      margin-top: 30px;
     }
     .nav > #nav-check:not(:checked) ~ .nav-links {
       height: 0px;
@@ -122,6 +134,7 @@ body {
     }
     .nav {
       padding: 17px;
+      justify-content: space-between;
     }
     .navbar-logo {
       display: none;
