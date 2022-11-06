@@ -25,6 +25,21 @@
     border-top: 1px solid  #e0dede;
     border-bottom: 1px solid #e0dede;
 }
+.about_content{
+    display: flex;
+    gap: 30px;
+}
+.about_content img{
+    height:fit-content;
+}
+.img2{
+    width: 46%;
+   
+}
+.img3{
+    width: 46%;
+   
+}
 
 
 
@@ -36,7 +51,10 @@
         width: 100% ;
        
     }
-    
+    .about_content{
+        display: block;
+        gap: 20px;
+    }
     
    
 }
