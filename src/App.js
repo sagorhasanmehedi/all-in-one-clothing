@@ -6,6 +6,7 @@ import Ourservicepage from "./pages/Ourservicepage"
 import Productspage from "./pages/Productspage";
 import Contactuspage from "./pages/Contactuspage";
 import Footer from "./components/footer/Footer";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
@@ -16,9 +17,9 @@ function App() {
         <Route path="/ourservices" element={<Ourservicepage />} />
         <Route path="/products" element={<Productspage />} />
         <Route path="/contactus" element={<Contactuspage />} />
-       
       </Routes>
       <Footer/>
+      <ScrollToTop smooth  style={{color:"blue",marginBottom:"40px"}}/>
     </Router>
   );
 }

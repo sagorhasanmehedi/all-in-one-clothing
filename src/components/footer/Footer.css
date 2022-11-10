@@ -38,3 +38,49 @@
 .footer_link li{
     cursor: pointer;
 }
+.footer_bootom{
+    background-color: black;
+    padding: 10px 0 10px 0;
+    color: rgb(158, 155, 155);
+    display: flex;
+    justify-content: center;
+}
+.footer_inner_container{
+    width: 51% ;
+    display: flex;
+    justify-content: space-between;
+}
+.footer_inner_container a{
+    color: rgb(158, 155, 155);
+    text-decoration: none;
+}
+.footer_inner_container span{
+    font-size: 14px;
+}
+.span_highlight:hover{
+color:red;
+transition:0.1s ;
+cursor: pointer;
+}
+
+   /* For small devices (596px and up) */
+   @media only screen and (max-width: 600px) {
+    .footer_container{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 30px 0 30px;
+    }
+    .footer_heading_gap{
+        margin-top: 50px !important;
+    }
+    .footer_inner_container{
+        width: 100% ;
+        padding: 0 30px 0 30px;
+        justify-content: center;
+       flex-direction: column;
+    }
+    .footer_inner_container :last-child{
+       margin-top: 6px;
+    }
+       
+    }
