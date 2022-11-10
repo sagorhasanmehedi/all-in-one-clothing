@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <h6>ABOUT US</h6>
           <p>
-            Ha-Meem Group is a leading supplier of readymade <br />
+            Fashion2morrow is a leading supplier of readymade <br />
             garments and denim fabric in the world. The company <br />
             produces some of the most fashionable denim fabrics <br />
             and garment products.
@@ -26,11 +26,11 @@ const Footer = () => {
         <div>
           <h6>HEAD OFFICE</h6>
           <ul>
-            <li>Ha-Meem Group</li>
-            <li>387 (South), Tejgaon Industrial Area</li>
-            <li>Dhaka-1208, Bangladesh</li>
-            <li>+880-2-8170592, +880-2-8170593</li>
-            <li> +880-2-8170583</li>
+            <li>ASTRAL PALACE</li>
+            <li>Plot #27 Road #08, Sector 11, Uttara</li>
+            <li>Dnaka-1230, Bangladesh</li>
+            <li>E-Mail : fashion@2morrow.com</li>
+            <li>+91 97510 - 96789</li>
           </ul>
         </div>
       </div>
