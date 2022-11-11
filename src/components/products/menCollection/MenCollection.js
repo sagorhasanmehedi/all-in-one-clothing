@@ -20,6 +20,7 @@ import img16 from "../../../assets/men-collection/16.jpg";
 import img17 from "../../../assets/men-collection/17.jpg";
 import img18 from "../../../assets/men-collection/18.jpg";
 
+
 const MenCollection = () => {
   return (
     <Box sx={{ display: "flex", justifyContent: "center" }}>
