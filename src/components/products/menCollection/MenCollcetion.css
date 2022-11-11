@@ -1,0 +1,51 @@
+.men_collection{
+    width: 51% ;
+    padding:40px; 
+    margin-top:40px;
+}
+.men_collection img{
+    width: 100%;
+    cursor: pointer;
+    filter: none;
+    -webkit-filter: grayscale(0);
+    transition: transform 0.8s ease;
+    display: block;
+}
+
+.men_collection img:hover{
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* For small devices (596px and up) */
+
+ @media only screen and (max-width: 600px) {
+    .men_collection{
+        width: 100% ;
+       
+    }
+}

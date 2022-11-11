@@ -70,89 +70,7 @@
     width: 60px;
     border-radius: 50%;
   }
-  @media (max-width: 600px) {
-    .nav > .nav-btn {
-      display: inline-block;
-      position: absolute;
-      right: 27px;
-      top: 27px;
-    }
-    .nav > .nav-btn > label {
-      display: inline-block;
-    }
-    .nav > .nav-btn > label > span:hover,
-    .nav #nav-check:checked ~ .nav-btn > label > span {
-        border-top: 2px solid rgb(168, 14, 14)  !important;
-    }
-    .nav > .nav-btn > label > span {
-      display: block;
-      width: 25px;
-      height: 10px;
-      border-top: 2px solid #f21111;
-    }
-    .nav > .nav-links {
-      position: absolute;
-      display: block;
-      width: 100%;
-      background-color: #333;
-      height: 0px;
-      transition: all 0.3s ease-in;
-      overflow-y: hidden;
-      top: 88px;
-      left: 0px;
-      text-align: center;
-     
-      
-    }
-    .nav > .nav-links > a {
-      display: block;
-      margin-left: 18px;
-      color: white;
-    }
-    .nav > .nav-links > a:first-child {
-      margin-top: 30px;
-    }
-    .nav > #nav-check:not(:checked) ~ .nav-links {
-      height: 0px;
-    }
-    .nav > #nav-check:checked ~ .nav-links {
-      height: calc(100vh - 50px);
-      overflow-y: auto;
-    }
   
-    .nav > .nav-header {
-      display: inline;
-    }
-    .nav > .nav-header > .nav-title {
-      padding-left: 0;
-    }
-    .nav {
-      padding: 17px;
-      justify-content: space-between;
-    }
-    .navbar-logo {
-      display: none;
-    }
-    .home-subnav {
-      display: none;
-    }
-  
-    .searchBook {
-      width: 89%;
-    }
-    .search-bar-small {
-      width: 100% !important;
-      display: flex;
-      justify-content: center;
-      background-color: aqua;
-    }
-    .search-bar {
-      display: none;
-    }
-    .nav_bottom_border{
-      height: 7px;
-    }
-  }
   /*  */
 /* 
 ul li{
@@ -225,10 +143,10 @@ ul li ul.dropdown li{
   display: none;
   position: absolute;
   background-color: rgba(0,0,0,.85);
-  min-width: 165px;
+  min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
-  margin-top: 48px;
+  /* margin-top: 48px; */
 }
 
 .dropdown-content a {
@@ -241,10 +159,100 @@ ul li ul.dropdown li{
     line-height: 1.428571429;
     white-space: nowrap;
     font-size: 14px;
+    text-transform:capitalize !important;
    
 }
 
 .dropdown-content a:hover {background-color: red;}
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+
+
+@media (max-width: 600px) {
+  .dropdown a{
+    color: #fff;
+  }
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 27px;
+    top: 27px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+  }
+  .nav > .nav-btn > label > span:hover,
+  .nav #nav-check:checked ~ .nav-btn > label > span {
+      border-top: 2px solid rgb(168, 14, 14)  !important;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #f21111;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 88px;
+    left: 0px;
+    text-align: center;
+   
+    
+  }
+  .nav > .nav-links > a {
+    display: block;
+    margin-left: 18px;
+    color: white;
+  }
+  .nav > .nav-links > a:first-child {
+    margin-top: 30px;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+
+  .nav > .nav-header {
+    display: inline;
+  }
+  .nav > .nav-header > .nav-title {
+    padding-left: 0;
+  }
+  .nav {
+    padding: 17px;
+    justify-content: space-between;
+  }
+  .navbar-logo {
+    display: none;
+  }
+  .home-subnav {
+    display: none;
+  }
+
+  .searchBook {
+    width: 89%;
+  }
+  .search-bar-small {
+    width: 100% !important;
+    display: flex;
+    justify-content: center;
+    background-color: aqua;
+  }
+  .search-bar {
+    display: none;
+  }
+  .nav_bottom_border{
+    height: 7px;
+  }
 }

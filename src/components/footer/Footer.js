@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 
 const Footer = () => {
@@ -18,10 +19,10 @@ const Footer = () => {
           <div className="footer_link">
             <h6 className="footer_heading_gap">QUICK LINKS</h6>
             <ul>
-              <li>Our Services</li>
-              <li>Contact Us</li>
-              <li>Products</li>
-              <li>Home</li>
+              <li><Link to="/ourservices">Our Services</Link></li>
+              <li><Link to="/contactus">Contact Us</Link></li>
+              <li><a href="#products_gallery" >Products</a></li>
+              <li><Link to="/">Home</Link></li>
             </ul>
           </div>
           <div>

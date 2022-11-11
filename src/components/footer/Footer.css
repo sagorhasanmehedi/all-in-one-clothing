@@ -37,6 +37,12 @@
 }
 .footer_link li{
     cursor: pointer;
+    
+}
+.footer_link a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #fff;
 }
 .footer_bootom{
     background-color: black;

@@ -21,13 +21,13 @@ const Header = () => {
           <Link to="/aboutus">About Us</Link>
           <Link to="/ourservices">Our Services</Link>
           <Link class="dropdown">
-          <Link to="">Products</Link>
+          <Link class="dropdown_title" to="">Products</Link>
             <div class="dropdown-content">
-              <a href="#">Men wear</a>
-              <a href="#">Boys wear</a>
-              <a href="#">Infants wear</a>
-              <a href="#">Women wear</a>
-              <a href="#">Girls wear</a>
+              <Link to="/menCollection">Men Collection</Link>
+              <Link to="/boysCollection">Boys Collection</Link>
+              <Link to="/infantsCollection">Infants Collection</Link>
+              <Link to="/womenCollection">Women Collection</Link>
+              <Link to="/girlsCollection">Girls Collection</Link>
             </div>
           </Link>
 
