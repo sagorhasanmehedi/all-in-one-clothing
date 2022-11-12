@@ -4,6 +4,7 @@ import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
+import Swal from "sweetalert2";
 
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === "dark" ? "#1A2027" : "#fff",
@@ -14,6 +15,11 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export default function ContactsForm() {
+  const fireSwal = () => {
+    Swal.fire({
+      title: "This feature not available at this moment",
+    });
+  };
   return (
     <div className="contact_form">
       <Box sx={{ flexGrow: 1 }}>
@@ -29,16 +35,15 @@ export default function ContactsForm() {
           </Grid>
           <Grid item xs={12}>
             <textarea
-             placeholder="Message"
+              placeholder="Message"
               onfocus="this.value = '';"
               onblur="if (this.value == '') {this.value = 'Message...';}"
               required
               spellcheck="false"
-            >
-            </textarea>
+            ></textarea>
           </Grid>
         </Grid>
-        <button>SEND</button>
+        <button onClick={fireSwal}>SEND</button>
       </Box>
     </div>
   );

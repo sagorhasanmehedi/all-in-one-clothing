@@ -31,7 +31,7 @@ const Footer = () => {
               <li>ASTRAL PALACE</li>
               <li>Plot #27 Road #08, Sector 11, Uttara</li>
               <li>Dnaka-1230, Bangladesh</li>
-              <li>E-Mail : kamrul@fashion2morrow.com </li>
+              <li>kamrul@fashion2morrow.com </li>
               <li>+8801713363078</li>
             </ul>
           </div>

@@ -1,3 +1,45 @@
-.banner img{
-    width: 100%;
+.banner{
+    background:url(../../assets/banner.jpg);
+    background-position: center;
+    background-size: cover;
+   height: 100vh;
+   position: relative;
 }
+.text_box{
+    background: rgba(0, 0, 0, 0.775);
+    padding: 40px;
+    position: absolute;
+    width: 30%;
+left: 15%;
+top: 27%;
+}
+.text_box h1{
+    font-size: 36px;
+    color: #fff;
+    margin-top: 20px;
+    margin-bottom: 10px;
+font-weight: normal;
+}
+.text_box h4{
+    font-size: 20px;
+    color: #fff;
+    font-weight: 300;
+}
+
+
+   /* For small devices (596px and up) */
+   @media only screen and (max-width: 600px) {
+    .text_box{
+        width: 95%;
+        padding: 20px;
+        position: absolute;
+    left: 2.5%;
+    top: 25%;
+    }
+    .banner{
+        background:url(../../assets/bannear.jpg);
+        background-position:center;
+        background-size: cover;
+       height: 100vh;
+    }
+    }
