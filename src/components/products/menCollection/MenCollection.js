@@ -1,6 +1,9 @@
-import { Box, Grid } from "@mui/material";
 import React from "react";
+import { Box, Grid } from "@mui/material";
 import "./MenCollcetion.css";
+import { useCallback } from "react";
+import { useState } from "react";
+import ImageViewer from "react-simple-image-viewer";
 import img1 from "../../../assets/men-collection/1.jpg";
 import img2 from "../../../assets/men-collection/2.jpg";
 import img3 from "../../../assets/men-collection/3.jpg";
@@ -20,69 +23,70 @@ import img16 from "../../../assets/men-collection/16.jpg";
 import img17 from "../../../assets/men-collection/17.jpg";
 import img18 from "../../../assets/men-collection/18.jpg";
 
-
 const MenCollection = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const [isViewerOpen, setIsViewerOpen] = useState(false);
+  const images = [
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+    img11,
+    img12,
+    img13,
+    img14,
+    img15,
+    img16,
+    img17,
+    img18,
+  ];
+
+  const openImageViewer = useCallback((index) => {
+    setCurrentImage(index);
+    setIsViewerOpen(true);
+  }, []);
+
+  const closeImageViewer = () => {
+    setCurrentImage(0);
+    setIsViewerOpen(false);
+  };
+  
   return (
-    <Box sx={{ display: "flex", justifyContent: "center" }}>
-      <div className="men_collection">
-        <Grid container spacing={{ md: 2, xs: 3 }}>
-          <Grid item md={3}>
-            <img src={img1} alt="" srcset="" />
+      <Box sx={{ display: "flex", justifyContent: "center" }}>
+        <div className="men_collection">
+          <Grid container spacing={{ md: 2, xs: 3 }}>
+            {images.map((src, index) => (
+              <Grid item md={3}>
+                <img
+                  src={src}
+                  onClick={() => openImageViewer(index)}
+                  key={index}
+                  style={{ margin: "2px" }}
+                  alt=""
+                />
+              </Grid>
+            ))}
           </Grid>
-          <Grid item md={3}>
-            <img src={img2} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img3} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img4} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img5} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img6} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img7} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img8} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img9} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img10} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img11} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img12} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img13} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img14} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img15} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img16} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img17} alt="" srcset="" />
-          </Grid>
-          <Grid item md={3}>
-            <img src={img18} alt="" srcset="" />
-          </Grid>
-        </Grid>
-      </div>
-    </Box>
+          {isViewerOpen && (
+            <ImageViewer
+              src={images}
+              currentIndex={currentImage}
+              onClose={closeImageViewer}
+              disableScroll={false}
+              backgroundStyle={{
+                backgroundColor: "rgba(0,0,0,0.9)",
+              }}
+              closeOnClickOutside={true}
+            />
+          )}
+        </div>
+      </Box>
   );
 };
 

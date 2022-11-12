@@ -3,32 +3,36 @@
     padding:40px; 
     margin-top:40px;
 }
-
-/*  */
-.men_collection{
-    width: 51% ;
-    padding:40px; 
-    margin-top:40px;
-}
-.men_collection img{
+.women_collection img{
     width: 100%;
-    cursor: pointer;
-    filter: none;
-    -webkit-filter: grayscale(0);
-    transition: 0.2s;
-   
 }
+.modal-content {
+    width: 27% !important;
+}
+.modal{
+    background-color: rgb(0 0 0 / 84%) !important;
+}
+.slide img{
+    filter: none !important;
+    -webkit-filter: none !important;
+}
+ 
 
-.men_collection img:hover{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-}
+
+
 
  /* For small devices (596px and up) */
 
  @media only screen and (max-width: 600px) {
-    .men_collection{
+    .women_collection{
         width: 100% ;
-       
+    }
+    .modal-content {
+        width: 100% !important;
+    }
+    .previous, .next {
+        font-size: 45px !important;
+        font-weight: normal !important;
+      
     }
 }

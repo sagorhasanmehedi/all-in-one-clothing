@@ -1,11 +1,9 @@
-.men_collection{
+.girls_collection{
     width: 51% ;
     padding:40px; 
     margin-top:40px;
-    -webkit-overflow-scrolling: none;
-    overflow: hidden;
 }
-.men_collection img{
+.girls_collection img{
     width: 100%;
     cursor: pointer;
     filter: none;
@@ -13,19 +11,19 @@
     transition: 0.2s;
    
 }
-.men_collection img:hover{
+
+.girls_collection img:hover{
     filter: grayscale(100%);
     -webkit-filter: grayscale(100%);
 }
 
 
-/* For small devices (596px and up) */
+
+ /* For small devices (596px and up) */
 
  @media only screen and (max-width: 600px) {
-    .men_collection{
+    .girls_collection{
         width: 100% ;
        
     }
-   
-    
 }
