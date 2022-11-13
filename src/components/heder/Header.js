@@ -63,7 +63,8 @@ const Header = () => {
         <input type="checkbox" id="nav-check" />
         <div className="nav-header">
           <div className="nav-title">
-            <Link to="/">FASHION 2MORROW</Link>
+            {/* <Link to="/">FASHION 2MORROW</Link> */}
+            <h1 className="header_text"><Link to="/">FASHION 2MORROW</Link></h1> 
           </div>
         </div>
         <div className="nav-btn">

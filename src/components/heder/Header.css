@@ -1,5 +1,5 @@
 .nav {
-  padding: 25px 0 25px 0;
+  padding: 20px 0 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -31,10 +31,7 @@
   cursor: pointer;
   font-weight: 500;
 }
-.nav-title a {
-  text-decoration: none;
-  color: #000;
-}
+
 .nav > .nav-btn {
   display: none;
 }
@@ -113,8 +110,6 @@
 .dropdown:hover .dropdown-content {
   display: block;
 } */
-
-
 
 /*  */
 #basic-menu a {
@@ -212,8 +207,42 @@
   .nav_bottom_border {
     height: 7px;
   }
-  #basic-menu  {
-   margin-top: 35px !important;
-   margin-left: -80px !important;
+  #basic-menu {
+    margin-top: 35px !important;
+    margin-left: -80px !important;
+  }
+}
+/*  */
+.nav-title a{
+  text-decoration: none;
+  color: #000;
+  
+}
+
+.header_text {
+  font-size: calc(0.9em + 0.9vmin);
+  font-weight: 500;
+ 
+  margin: 0;
+ 
+  --x-offset: -0.0625em;
+  --y-offset: 0.0625em;
+  --stroke: 0.025em;
+  --background-color: white;
+  --stroke-color: lightblue;
+
+  text-shadow: var(--x-offset) var(--y-offset) 0px var(--background-color),
+    calc(var(--x-offset) - var(--stroke)) calc(var(--y-offset) + var(--stroke))
+      0px var(--stroke-color);
+}
+/* for browsers that support spread, added in
+https://drafts.csswg.org/css-text-decor-4/#text-shadow-property
+currently: none browsers! none of them!
+I can't even find a test: 
+https://wpt.fyi/results/css/css-text-decor */
+@supports (text-shadow: 1px 1px 1px 1px black) {
+  h1 {
+    text-shadow: var(--x-offset) var(--y-offset) 0px 0px var(--background-color),
+      var(--x-offset) var(--y-offset) var(--stroke) 0px var(--stroke-color);
   }
 }
