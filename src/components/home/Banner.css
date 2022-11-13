@@ -1,45 +1,67 @@
-.banner{
-    background:url(../../assets/banner.jpg);
+.banner {
+  background: url(../../assets/banner.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.text_box {
+  background: rgba(0, 0, 0, 0.775);
+  padding: 40px;
+  position: absolute;
+  width: 30%;
+  left: 15%;
+  top: 27%;
+}
+.text_box h1 {
+  font-size: 36px;
+  color: #fff;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: normal;
+}
+.text_box h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+}
+.banner_dot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.banner_dot div {
+  width: 18px;
+  height: 18px;
+  border: 2px solid red;
+  cursor: pointer;
+  margin: 20px;
+}
+.banner_dot_highlight {
+  background-color: red;
+}
+
+/* For small devices (596px and up) */
+@media only screen and (max-width: 600px) {
+  .text_box {
+    width: 95%;
+    padding: 20px;
+    position: absolute;
+    left: 2.5%;
+    top: 20%;
+  }
+  .banner {
+    background: url(../../assets/bannear.jpg);
     background-position: center;
     background-size: cover;
-   height: 100vh;
-   position: relative;
+    height: 100vh;
+  }
+  .banner_dot div {
+    width: 12px;
+    height: 12px;
+  }
+  .banner_dot {
+    gap: 0;
+  }
 }
-.text_box{
-    background: rgba(0, 0, 0, 0.775);
-    padding: 40px;
-    position: absolute;
-    width: 30%;
-left: 15%;
-top: 27%;
-}
-.text_box h1{
-    font-size: 36px;
-    color: #fff;
-    margin-top: 20px;
-    margin-bottom: 10px;
-font-weight: normal;
-}
-.text_box h4{
-    font-size: 20px;
-    color: #fff;
-    font-weight: 300;
-}
-
-
-   /* For small devices (596px and up) */
-   @media only screen and (max-width: 600px) {
-    .text_box{
-        width: 95%;
-        padding: 20px;
-        position: absolute;
-    left: 2.5%;
-    top: 25%;
-    }
-    .banner{
-        background:url(../../assets/bannear.jpg);
-        background-position:center;
-        background-size: cover;
-       height: 100vh;
-    }
-    }
