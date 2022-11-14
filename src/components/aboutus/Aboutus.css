@@ -1,75 +1,70 @@
-.about_us{
-    width: 51% ;
-    padding:40px; 
-    margin-top:40px;
+.about_us {
+  width: 54.5%;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
-.about_us h4{
-    font-size: 1.9em;
-    line-height: 1.5em;
-    padding: 17px 0 17px 0;
-    font-weight: 400;
-    margin: 8px !important;
+.about_us h4 {
+  font-size: 1.9em;
+  line-height: 1.5em;
+  padding: 17px 0 17px 0;
+  font-weight: 400;
+  margin: 8px 8px 8px 0 !important;
 }
 .about_us p {
-    line-height: 1.9em;
-    margin: 0;
+  line-height: 1.9em;
+  margin: 0;
 }
-.about_us_title{
-    display: flex;
-    align-items: center;
-    margin-bottom: 31px;
+.about_us_title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 31px;
 }
-.about_us_sep{
-    width: 20%;
-    height: 6px;
-    border-top: 1px solid  #e0dede;
-    border-bottom: 1px solid #e0dede;
+.about_us_sep {
+  width: 20%;
+  height: 6px;
+  border-top: 1px solid #e0dede;
+  border-bottom: 1px solid #e0dede;
 }
-.about_content{
-    display: flex;
-    gap: 30px;
+.about_content {
+  display: flex;
+  gap: 30px;
 }
-.about_content img{
-    height:fit-content;
+.about_content img {
+  height: fit-content;
 }
-.img2{
-    width: 46%;
-   
+.img2 {
+  width: 46%;
 }
-.img3{
-    width: 46%;
-   
+.img3 {
+  width: 46%;
 }
 
+/* For small devices (596px and up) */
 
-  /* For small devices (596px and up) */
-
-  @media only screen and (max-width: 600px) {
-    .about_us{
-        width: 100% ;
-       margin-top: 0;
-    }
-    .about_content{
-        display: block;
-        gap: 20px;
-    }
-    .img3{
-       margin-bottom: 0 !important;
-       
-    }
-    .about_content img{
-        width: 100%;
-        margin-bottom: 50px;
-    }
-    .about_us img{
-       margin-top: 20px;
-    }
-    .about_us h4{
-      padding: 0;
-    }
-    .about_us_title{
-        margin-bottom: 0;
-    }
-    
-   
+@media only screen and (max-width: 600px) {
+  .about_us {
+    width: 100%;
+    margin-top: 0;
+    padding: 40px 40px 0 40px;
+  }
+  .about_content {
+    display: block;
+    gap: 20px;
+  }
+  .img3 {
+    margin-bottom: 0 !important;
+  }
+  .about_content img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .about_us img {
+    margin-top: 20px;
+  }
+  .about_us h4 {
+    padding: 0;
+  }
+  .about_us_title {
+    margin-bottom: 0;
+  }
 }

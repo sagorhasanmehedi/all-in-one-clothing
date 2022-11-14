@@ -35,13 +35,8 @@ const Banner = () => {
       <div className="text_box">
         <Slider {...sliderSettings}>
           <>
-            <h1>Our Washing facility is one of the biggest in Bangladesh</h1>
-            <h4>
-              A premium facility with state of the art laundry equipped with the
-              latest Italian machines. We have washing capacity of 300,000
-              pcs/day with all types of dye, over dyeing garments and
-              complicated fashion washes.
-            </h4>
+            <h1>Quality One of Life's Necessities</h1>
+            {/* <h4>Where Style Never Goes Out of Fashion.</h4> */}
             <div className="banner_dot">
               <div className="banner_dot_highlight"></div>
               <div></div>
@@ -49,13 +44,13 @@ const Banner = () => {
             </div>
           </>
           <>
-            <h1>FASHION 2MORROW vertical in Denim</h1>
-            <h4>
+            <h1>FASHION 2MORROW vertical in shirt and knit item</h1>
+            {/* <h4>
               Installed capacity of over 4 million meters per month. FASHION
               2MORROW produces yarns from it's own Spinning Mill with a capacity
               of 44 tons per day. It also has piece dyeing and yarn dyeing
               facility.
-            </h4>
+            </h4> */}
             <div className="banner_dot">
               <div></div>
               <div className="banner_dot_highlight"></div>
@@ -63,12 +58,12 @@ const Banner = () => {
             </div>
           </>
           <>
-            <h1>FASHION 2MORROW's accessories unit is developing</h1>
-            <h4>
+            <h1>Style For Tip Top Vintage Clothings Best Fashion!</h1>
+            {/* <h4>
               Manufactures it's own accessories like belt, twill tape, elastic,
               button, zipper, hangar, all kinds of paper and woven labels with
               full care.
-            </h4>
+            </h4> */}
             <div className="banner_dot">
               <div></div>
               <div></div>

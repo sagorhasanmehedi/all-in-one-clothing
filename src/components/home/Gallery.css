@@ -1,8 +1,8 @@
 .gallery{
     display: flex;
     width: 51% ;
-    padding:40px; 
-    margin-top:4rem;
+    margin-top:7rem;
+    margin-bottom: 40px;
     gap: 16px;
 }
   .card_container {
