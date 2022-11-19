@@ -1,29 +1,27 @@
-.girls_collection{
-    width: 51% ;
-    padding:40px; 
-    margin-top:40px;
+.girls_collection {
+  width: 54.5%;
+  margin-top: 80px;
+  margin-bottom: 40px;
 }
-.girls_collection img{
+.girls_collection img {
+  width: 100%;
+  cursor: pointer;
+  filter: none;
+  -webkit-filter: grayscale(0);
+  transition: 0.2s;
+}
+
+.girls_collection img:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+
+/* For small devices (596px and up) */
+
+@media only screen and (max-width: 600px) {
+  .girls_collection {
     width: 100%;
-    cursor: pointer;
-    filter: none;
-    -webkit-filter: grayscale(0);
-    transition: 0.2s;
-   
-}
-
-.girls_collection img:hover{
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(100%);
-}
-
-
-
- /* For small devices (596px and up) */
-
- @media only screen and (max-width: 600px) {
-    .girls_collection{
-        width: 100% ;
-       
-    }
+    margin-top: 0;
+    padding: 50px 40px 0 40px;
+  }
 }

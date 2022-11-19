@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import styled from "styled-components";
+import logo from "../../assets/WhatsApp Image 2022-11-17 at 8.44.52 PM.jpeg";
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -65,6 +66,7 @@ const Header = () => {
           <div className="nav-title">
             {/* <Link to="/">FASHION 2MORROW</Link> */}
             <h1 className="header_text"><Link to="/">FASHION 2MORROW</Link></h1> 
+            {/* <img src={logo} alt="" srcset="" /> */}
           </div>
         </div>
         <div className="nav-btn">
