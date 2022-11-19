@@ -1,6 +1,5 @@
 .gallery{
     display: flex;
-    /* width: 51% ; */
     margin-top:7rem;
     margin-bottom: 40px;
     gap: 16px;

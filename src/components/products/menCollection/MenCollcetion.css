@@ -1,5 +1,5 @@
 .men_collection {
-  width: 54.5%;
+  width: 55%;
   margin-top: 80px;
   margin-bottom: 40px;
   -webkit-overflow-scrolling: none;
@@ -26,3 +26,11 @@
     padding: 50px 40px 0 40px;
   }
 }
+
+/* For laptpo (1550px and up) */
+@media only screen and (max-width: 1550px) {
+  .men_collection {
+    width: 65%;
+  }
+}
+
