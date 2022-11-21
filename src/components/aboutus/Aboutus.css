@@ -69,8 +69,8 @@
   }
 }
 
-/* For laptpo (1550px and up) */
-@media only screen and (max-width: 1550px) {
+
+@media (min-width: 992px) and (max-width: 1550px) {
   .about_us {
     width: 65%;
   }
