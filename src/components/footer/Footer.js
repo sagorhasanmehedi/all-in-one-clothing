@@ -62,8 +62,8 @@ const Footer = () => {
           <span>
             Powered By{" "}
             <a
-              href="https://www.linkedin.com/in/mehedi-hasan-27a272220/"
-              className="span_highlight"
+              href="https://www.facebook.com/mehedi.553034"
+              className="span_name_highlight"
             >
               Mehedi hasan
             </a>{" "}
