@@ -112,7 +112,7 @@
     overflow-y: hidden;
     top: 88px;
     left: 0px;
-    text-align: center;
+    text-align: center ;
     z-index: 999;
   }
   .nav > .nav-links > a {
