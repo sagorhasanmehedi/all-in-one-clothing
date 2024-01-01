@@ -84,8 +84,9 @@ const Header = () => {
             aria-controls={open ? "basic-menu" : undefined}
             aria-haspopup="true"
             aria-expanded={open ? "true" : undefined}
-            onClick={handleClick}
-            // onMouseOver={handleClick}
+            // onClick={handleClick}
+            onMouseOver={handleClick}
+            
           >
             Products
           </Link>

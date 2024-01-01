@@ -3,6 +3,9 @@
   margin-bottom: 40px;
   margin-top: 80px;
 }
+.our_service {
+  margin-bottom: 30px;
+}
 .our_serviceses h2 {
   font-size: 1.9em;
   line-height: 1.5em;
@@ -16,7 +19,7 @@
 .service_title {
   display: flex;
   align-items: center;
-  margin-bottom: 31px;
+  margin-bottom: 5px;
 }
 .title_sep {
   width: 16%;

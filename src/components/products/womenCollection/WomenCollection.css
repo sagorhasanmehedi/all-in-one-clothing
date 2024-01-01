@@ -5,6 +5,7 @@
 }
 .women_collection img {
   width: 100%;
+  cursor: pointer;
 }
 .modal-content {
   width: 27% !important;
@@ -15,6 +16,11 @@
 .slide img {
   filter: none !important;
   -webkit-filter: none !important;
+}
+
+.women_collection img:hover {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
 }
 
 /* For small devices (596px and up) */
