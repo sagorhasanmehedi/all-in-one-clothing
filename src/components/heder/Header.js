@@ -64,8 +64,8 @@ const Header = () => {
         <input type="checkbox" id="nav-check" />
         <div className="nav-header">
           <div className="nav-title">
-            {/* <h1 className="header_text"><Link to="/">FASHION 2MORROW</Link></h1>  */}
-            <img src={logo} alt="" srcset="" />
+             <h1 className="header_text"><Link to="/">FASHION 2MORROW</Link></h1> 
+            {/* <img src={logo} alt="" srcset="" /> */}
           </div>
         </div>
         <div className="nav-btn">
@@ -114,7 +114,6 @@ const Header = () => {
               <Link to="/girlsCollection">Girls Collection</Link>
             </MenuItem>
           </StyledMenu>
-
           {/* <Link class="dropdown">
             <Link
               id="basic-button"
@@ -135,7 +134,6 @@ const Header = () => {
               <Link to="/girlsCollection">Girls Collection</Link>
             </div>
           </Link> */}
-
           <Link to="/contactus">Contact Us</Link>
         </div>
       </div>

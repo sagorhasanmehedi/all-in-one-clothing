@@ -20,7 +20,6 @@ export default function ContactsForm() {
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_l226ect",
@@ -60,11 +59,7 @@ export default function ContactsForm() {
             <input type="text" placeholder="Mobail Number" />
           </Grid>
           <Grid item xs={12}>
-            <textarea
-              name="message"
-              placeholder="Message"
-              required
-            ></textarea>
+            <textarea name="message" placeholder="Message" required></textarea>
           </Grid>
         </Grid>
         <input className="send_button" type="submit" value="SEND" />

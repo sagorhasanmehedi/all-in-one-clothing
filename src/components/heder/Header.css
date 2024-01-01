@@ -1,7 +1,7 @@
 .nav {
   padding: 16px 0 16px 0;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 11%;
 }
@@ -15,14 +15,14 @@
     rgb(224, 42, 255)
   );
 }
-/* .nav > .nav-header > .nav-title {
+.nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 22px;
-  color: #000;
+  color: #000 !;
   padding: 10px 10px 10px 10px;
   cursor: pointer;
   font-weight: 500;
-} */
+}
 
 .nav > .nav-btn {
   display: none;
@@ -169,15 +169,21 @@
   }
 }
 
-.nav-title img{
+.nav-title img {
   margin-left: 5%;
+}
+
+.header_text a {
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .header_text {
   font-size: calc(0.9em + 0.9vmin);
   font-weight: 500;
-
+  color: #000 !important;
   margin: 0;
+  
 
   --x-offset: -0.0625em;
   --y-offset: 0.0625em;

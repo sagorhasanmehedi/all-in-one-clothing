@@ -60,7 +60,7 @@ const Footer = () => {
             . All Rights Reserved.
           </span>
           <span>
-            Powered By{" "}
+          Developed by{" "}
             <a
               href="https://www.facebook.com/mehedi.553034"
               className="span_name_highlight"
